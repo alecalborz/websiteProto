@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@font-face {
+  font-family: 'Blockletter';
+  src: url('Blockletter.otf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    height: 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center; /* Center the nav items vertically */
+    transform: translateX(-300px) translateY(0px); /* Move titles 20px to the left and 10px down */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-group {
+    display: flex;
+    align-items: center;
+    transform: translateX(300px) translateY(0px); /* Move logo and text 20px to the left and 10px down */
+}
+
+.logo {
+    width: 60px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;  /* Center the nav items vertically */
+}
+
+nav ul li {
+    margin: 0 10px; /* Reduce the margin to bring the titles closer */
+    position: relative;
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Remove the left margin for the first element */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove the right margin for the last element */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    font-family: 'Blockletter', Arial, sans-serif;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    width: 100%;
+    margin: 0;
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+
+.content video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+h2, p, h3 {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.footer {
+    background-color: #333;
+    width: 100%;
+    height: 200px;
+    padding: 20px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bottom-logo {
+    width: 60px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.bottom-logo-group {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Add this line */
+}
+
+.content h2 {
+    transform: translateX(-355px) translateY(-150px); /* Adjust x and y values as needed */
+    font-size: 45px; /* Adjust the font size as needed */
+    color: gold;
+    font-family: 'Blockletter', Arial, sans-serif;
+}
+
+.content p {
+    transform: translateX(-265px) translateY(-160px); /* Adjust x and y values as needed */
+    font-size: 90px; /* Adjust the font size as needed */
+    font-family: 'Blockletter', Arial, sans-serif;
+    line-height: 0.8;
+}
+
+.content h3 {
+    transform: translateX(-240px) translateY(-150px); /* Adjust x and y values as needed */
+    font-size: 20px; /* Adjust the font size as needed */
+    text-align: left;
+    font-family: 'Calibri Light', Calibri, sans-serif;
+    max-width: 800px; /* Set a max-width for the text to wrap */
+}
+
+.learn-more-btn {
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px; /* Add this line */
+}
+
+.learn-more-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.worlds-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.worlds-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.worlds-image-container {
+    position: relative;
+}
+
+.worlds-image {
+    width: 100%;
+    display: block;
+}
+
+.team-image {
+    position: absolute;
+    top: 250px; /* Adjust the position as needed */
+    left: 80px; /* Adjust the position as needed */
+    width: 40%; /* Adjust the size as needed */
+}
+
+.worlds-image-container {
+    position: relative;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 245px;
+    left: 700px;
+}
+
+.join-us {
+    font-size: 36px; /* Adjust font size as needed */
+    color: gold; /* Adjust color as needed */
+    margin-bottom: 0px; /* Adjust space between the two texts */
+    font-family: 'Blockletter', Arial, sans-serif;
+}
+
+.all-are-welcome {
+    font-size: 24px; /* Adjust font size as needed */
+    color: #fff; /* Adjust color as needed */
+    font-family: 'Blockletter', Arial, sans-serif;
+}
+
+.gmu-robotics-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 20;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.contact-us-btn {
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px;
+}
+
+.contact-us-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+
